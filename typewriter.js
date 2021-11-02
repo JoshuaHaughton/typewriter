@@ -1,12 +1,10 @@
-const sentence = "hello there from lighthouse labs";
+const sentence = "hello there from lighthouse labs\n";
 
-for (const char of sentence) {
+let delay = 300;
+for (const letter of sentence) {
   setTimeout(() => {
-    process.stdout.write(char);
-  }, 50)
+    process.stdout.write(letter);
+  }, delay)
+  delay += 300
   
 }
-
-setTimeout(() => {
-  process.stdout.write('\n');
-}, 1000)
